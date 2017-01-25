@@ -1,24 +1,29 @@
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <div class="well center-it">
-      <h2>Let's Get Some <%= @food.capitalize %> in <%= @location %></h2>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <% @results.businesses.each do |biz| %>
-    <div class="col-md-4">
-      <div class="well center-it">
-        <h3><%= biz.name %></h3>
-        <p>
-          <%= image_tag biz.rating_img_url_large, alt: "Yelp Rating" %>
-        </p>
-        <p>
-          <% biz.location.display_address.each do |add_line| %>
-            <%= add_line %><br />
-          <% end %>
-        </p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="well transparent">
+        <h2>Let's Get Some <%= @food.capitalize %></h2>
       </div>
     </div>
-  <% end %>
+  </div>
+  <div class="row">
+    <% @results.businesses.each do |biz| %>
+      <div class="col-md-4">
+        <div class="well center-it">
+          <h3><%= biz.name %></h3>
+          <p>
+            <%= image_tag biz.image_url, alt: "Restaurant Photo" %>
+          </p>  
+          <p>
+            <%= image_tag biz.rating_img_url, alt: "Yelp Rating" %>
+          </p>
+          <p>
+            <% biz.location.display_address.each do |add_line| %>
+              <%= add_line %><br />
+            <% end %>
+          </p>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>

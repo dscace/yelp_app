@@ -1,5 +1,6 @@
 # Using the Yelp gem will convert all the 
 # keys in the API hash to Ruby methods.
+require 'yelp'
 
 Yelp.client.configure do |config|
   config.consumer_key = ENV['YELP_CONSUMER_KEY']

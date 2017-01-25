@@ -16,3 +16,25 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+@font-face {
+  font-family: Caprica;
+  src: url(CapricaScriptPersonalUse.ttf);
+}
+
+body {
+	background: url(dogs.jpg) no-repeat center center fixed;
+	text-align: center;
+	font-family: helvetica;
+}
+
+.mtop-50 {
+	margin-top: 100px;
+	background: url(ketchup.jpg);
+	background-size: 800px 600px;
+}
+
+h1, h2 {
+	font-family: Caprica;
+}
+

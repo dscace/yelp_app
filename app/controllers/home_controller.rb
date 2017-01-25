@@ -5,13 +5,13 @@ class HomeController < ApplicationController
   def results
      # params coming the form in the index page
     # capitalization (or lack thereof) shouldn't be a problem
-    @food = params[:food]
+    @food = 'corndogs'
     @location = params[:location]
 
     # the client search set up by the Yelp gem
     # takes only two arguments, so if I want to
     # pass more, I can include them in a hash
-    parameters = { term: @food, limit: 9 }
+    parameters = { term: @food, limit: 6 }
 
     # using the Yelp gem to make the API call
     # the two arguments passed are the location I
