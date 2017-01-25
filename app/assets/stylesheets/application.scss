@@ -36,5 +36,25 @@ body {
 
 h1, h2 {
 	font-family: Caprica;
+	color: yellow;
+	text-shadow: 0 0 3px red;
 }
+
+.transparent {
+	background: transparent;
+	border: none;
+}
+
+.same {
+	height: 350px;
+	padding-top: 40px;
+	background: rgba(255,255,255,0.8);
+	border: none;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+
 

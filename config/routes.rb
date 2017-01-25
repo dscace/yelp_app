@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   post 'results' => 'home#results'
 
-  get 'test' => 'home#test'
+  get 'results' => 'home#results'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
