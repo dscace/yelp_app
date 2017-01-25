@@ -3,7 +3,8 @@ class HomeController < ApplicationController
   end
 
   def results
-     # params coming the form in the index page
+
+    # params coming the form in the index page
     # capitalization (or lack thereof) shouldn't be a problem
     @food = 'corndogs'
     @location = params[:location]
@@ -17,19 +18,8 @@ class HomeController < ApplicationController
     # the two arguments passed are the location I
     # want to search for, and then the extra parameters
     @results = Yelp.client.search(@location, parameters)
+
+   
   end
 
-  def test
-		# just testing things out - with hardcoded params
-    parameters = { term: "nachos", limit: 10 }
-
-    @results = Yelp.client.search('Atlanta, GA', parameters)
-
-    # printing out to the server to test out other
-    # method calls on the API results
-    puts "****************"
-    puts @results.region.center.latitude
-    puts @results.region.center.longitude
-    puts "****************"
-  end
 end
