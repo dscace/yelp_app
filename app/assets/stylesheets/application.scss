@@ -19,13 +19,13 @@
 
 @font-face {
   font-family: Caprica;
-  src: url('https://s3.amazonaws.com/yelpdogapi/CapricaScriptPersonalUse.ttf');
+  src: font-url('https://s3.amazonaws.com/yelpdogapi/CapricaScriptPersonalUse.ttf');
 }
 
 body {
 	background: url('https://s3.amazonaws.com/yelpdogapi/dogs.jpg') no-repeat center center fixed;
 	text-align: center;
-	font-family: helvetica;
+	font-family: helvetica, sans-serif;
 }
 
 .mtop-50 {
@@ -35,7 +35,7 @@ body {
 }
 
 h1, h2 {
-	font-family: Caprica;
+	font-family: 'Caprica', sans-serif;
 	color: yellow;
 	text-shadow: 0 0 3px red;
 }
