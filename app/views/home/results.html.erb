@@ -12,7 +12,9 @@
         <div class="well center-it same">
           <h3><%= biz.name %></h3>
           <p>
-            <%= image_tag biz.image_url, alt: "Restaurant Photo" %>
+            <% if biz.image_url != nil %>
+              <%= image_tag biz.image_url, alt: "Restaurant Photo" %>
+            <% end %>
           </p>  
           <p>
             <%= image_tag biz.rating_img_url, alt: "Yelp Rating" %>

@@ -19,11 +19,11 @@
 
 @font-face {
   font-family: Caprica;
-  src: url(CapricaScriptPersonalUse.ttf);
+  src: url('https://s3.amazonaws.com/yelpdogapi/CapricaScriptPersonalUse.ttf');
 }
 
 body {
-	background: url(dogs.jpg) no-repeat center center fixed;
+	background: url('https://s3.amazonaws.com/yelpdogapi/dogs.jpg') no-repeat center center fixed;
 	text-align: center;
 	font-family: helvetica;
 }
@@ -49,7 +49,7 @@ h1, h2 {
 	height: 350px;
 	padding-top: 40px;
 	border: none;
-	background: url(ketchup.jpg) no-repeat center center;
+	background: url('https://s3.amazonaws.com/yelpdogapi/ketchup.jpg') no-repeat center center;
 }
 
 h1 {
