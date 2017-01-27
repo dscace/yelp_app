@@ -6,7 +6,7 @@ class HomeController < ApplicationController
 
     # params coming the form in the index page
     # capitalization (or lack thereof) shouldn't be a problem
-    @food = 'corndogs'
+    @food = 'corndog'
     @location = params[:location]
 
     # the client search set up by the Yelp gem

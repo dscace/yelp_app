@@ -18,8 +18,8 @@
 @import "bootstrap";
 
 @font-face {
-  font-family: Caprica;
-  src: url('assets/CapricaScriptPersonalUse.ttf');
+  font-family: 'Caprica';    
+  src: url(CapricaScriptPersonalUse.ttf) format('truetype');
 }
 
 body {
@@ -35,9 +35,9 @@ body {
 }
 
 h1, h2 {
-	font-family: Caprica, sans-serif;
-	color: yellow;
-	text-shadow: 0 0 3px red;
+	font-family: 'Caprica', cursive;
+	color: #EECE0A;
+	text-shadow: 1px 1px 1px #931009;
 }
 
 .transparent {
@@ -50,6 +50,7 @@ h1, h2 {
 	padding-top: 40px;
 	border: none;
 	background: url('https://s3.amazonaws.com/yelpdogapi/ketchup.jpg') no-repeat center center;
+	border-radius: 20px;
 }
 
 h1 {
