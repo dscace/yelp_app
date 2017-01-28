@@ -1,24 +1,5 @@
-# README
+This is a Corndog finding app built with the Yelp API.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It returns the 6 closest restaurants serving corndogs to the city or location you enter.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<a href="https://vast-scrubland-24425.herokuapp.com/" target="_blank">You can view the app here.</a>
